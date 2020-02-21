@@ -5,7 +5,11 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.3rem;
+    max-width: 1100px;
+    font-size: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    transition: all 1s; 
 }  
 
 section {
@@ -54,8 +58,21 @@ footer {
    
 }
 
+#box-o {
+    padding-top: 80px;;
+}
+
 #section-c {
     margin-bottom: 200px;
+}
+
+#empty {
+    margin: 50px;
+    padding: 20px;
+}
+
+.button-container {
+    margin: 40px;
 }
 
 .button {
@@ -66,22 +83,34 @@ footer {
     background-color: #aa275e;
     padding: 40px;
     border-radius: 4px;
-    margin-top: 40px;
+    margin-top: 70px;
 }
 
-.boxes {
-    width: 33.33%;
+.boxes-container {
+    width: 100%;
+    margin: auto;
     color: #1a2c86fb;
-    padding: 40px;
-    margin-bottom: 20px;
+    float: left;
+      
     font-size: 2em;
+}
+
+.box {
+    width: 33.333%;
+    float: left;
+    padding: 20px 20px;
+    box-sizing: border-box;  
 }
 
 .boxes div span {
-    color: #09154efb;
+    color: #1a2c86fb;
     font-weight: bold;
     font-size: 2em;
 }
+
+
+
+
 
 
  
