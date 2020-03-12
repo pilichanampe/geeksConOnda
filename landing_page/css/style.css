@@ -1,12 +1,13 @@
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    max-width: 1100px;
-    font-size: 1rem;
+    font-family:'Roboto', sans-serif;
+    max-width: 1300px;
+    font-size: 3rem;
     margin-left: auto;
     margin-right: auto;
     transition: all 1s; 
@@ -17,7 +18,7 @@ section {
 }
 
 h1 {
-    font-size: 5em;
+    font-size: 5rem;
     line-height: 1.2;
     font-weight: normal;
     text-align: center;
@@ -25,10 +26,15 @@ h1 {
 }
 
 p {
-    font-size: 1.4em;
+    font-size: 2rem;
 }
 span {
     color: #aa275e;
+}
+
+span.price {
+    font-size: 5rem;
+    font-weight: bold;
 }
 
 input {
@@ -44,22 +50,23 @@ textarea {
 
 footer {
     text-align: center;
-    font-size: 2em;
+    font-size: 2rem;
+    margin: 100px;
 }
 
 input::placeholder {
      /* Por alguna razón, el padding de los input no me lo toma, pero en el textarea sí. Por qué es eso?*/
     padding: 20px;
-    font-size: 2em;
+    font-size: 2rem;
 }
 
 textarea::placeholder {
     padding: 20px;
-    font-size: 2em;
+    font-size: 2rem;
 }
 
 button {
-    font-size: 3em;
+    font-size: 3rem;
     text-decoration: none;
     color: white;
     border: #aa275e 1px solid;
@@ -87,16 +94,24 @@ button {
 #section-b {
     padding: 60px;
     margin: 20px;
+    
    
    
 }
 
 #box-o {
-    padding-top: 80px;;
+    display: flex;
+    align-items: center;
+    border: none;
 }
 
 #section-c {
     margin-bottom: 200px;
+}
+
+
+.titles {
+    margin-bottom: 70px;
 }
 
 .button-container {
@@ -104,7 +119,7 @@ button {
 }
 
 .button {
-    font-size: 3em;
+    font-size: 3rem;
     text-decoration: none;
     color: white;
     border: #aa275e 1px solid;
@@ -116,24 +131,33 @@ button {
 
 .boxes-container {
     width: 100%;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
     color: #1a2c86fb;
-    float: left;
-      
-    font-size: 2em;
+    display: flex;
+    flex: 1;
+    border-top: 1px solid #aa275e;
+    border-bottom: 1px solid #aa275e;
+    align-items: center;
 }
 
 .box {
-    width: 33.333%;
-    float: left;
+    
     padding: 20px 20px;
-    box-sizing: border-box;  
+    text-align: center;
+    font-size: 5rem;
+    border: 3px solid #aa275e;
+    border-radius: 5%;
+    margin: 70px auto;
+    
 }
 
 .boxes div span {
     color: #1a2c86fb;
     font-weight: bold;
-    font-size: 2em;
+    font-size: 2rem;
 }
 
 
