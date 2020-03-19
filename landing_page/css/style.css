@@ -32,7 +32,7 @@ span {
     color: #aa275e;
 }
 
-span.price {
+.numero {
     font-size: 5rem;
     font-weight: bold;
 }
