@@ -32,7 +32,7 @@ span {
     color: #aa275e;
 }
 
-span.price {
+.numero {
     font-size: 5rem;
     font-weight: bold;
 }
@@ -75,9 +75,6 @@ button {
     border-radius: 4px;
     margin-top: 70px;
 }
-
-
-
 
 #showcase {
     background-image: url('../img/showcase.jpg');
