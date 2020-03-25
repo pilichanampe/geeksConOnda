@@ -6,16 +6,17 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,400,700|Source+Sans+Pro:400,700&amp;display=swap">
         <link rel="stylesheet" href="css/style.css">
     </head>
-    <body class="content">
+    <body>
         <header>
-            <img src="img/showcase.png" alt="Stickers sobre teclado.">          
-            <img src="img/logo_geeks.png" alt="Logo de Geeks con Onda.">          
+            <img class="logo" src="img/logo_geeks.png" alt="Logo de Geeks con Onda.">
+            <img class="showcase" src="img/showcase.png" alt="Stickers sobre teclado.">          
+                      
         </header>
         <section>
-            <h1>hacemos/<span>stickers</span></h1>
-            <div>
+            <h1>hacemos/<span class="color-text">stickers</span></h1>
+            <div class="container">
                 <div>
-                    <!-- Usar figure en vez de img?? Buscar info. Creo que no hace falta.-->
+                    <!-- Usar figure y caption en vez de img?? Buscar info. Creo que no hace falta.-->
                     <img src="img/img 1.png" alt="Stickers sobre teclado.">
                     <p>Creamos diseños únicos y coleccionables para desarrolladores y comunidades.</p>
                 </div>
@@ -25,8 +26,8 @@
             </div>
         </section>
         <section>
-            <h1>hacé tu <span>pedido</span></h1>
-            <div>
+            <h1>hacé tu <span class="color-text">pedido</span></h1>
+            <div class="container">
                 <div>
                     <div>$250</div>
                     <div>por 18 stickers de 5 cm.</div>
@@ -39,27 +40,30 @@
                     <div>por 16 stickers de 4 cm.</div>
 
                 </div>
-                <button>COMPRAR</button>
+                <div class="button-container">
+                    <a href="#" class="button">COMPRAR</a>
+                </div>
             </div>
         </section>
         <section>
-            <h1>comunicate <span>con nosotros</span></h1>
-            <div>
+            <h1>comunicate <span class="color-text">con nosotros</span></h1>
+            <div class="container column">
                 <form action="">
                     <label for="nombreYapellido"></label>
                     <input required name="nombreYapellido" type="text" placeholder="NOMBRE Y APELLIDO" minlength="5" maxlength="100">
-                    <br>
+                    
                     <label for="email"></label>
                     <input required name="email" type="email" placeholder="E-MAIL">
-                    <br>
+                   
                     <label for="consulta"></label>
                     <textarea required name="consulta" type="email" placeholder="TU CONSULTA" minlength="5"></textarea>
+
                     <div class="submit-container">
-                    <button type="submit" name="submit">ENVIAR</button>
-                </div>
+                        <button type="submit" name="submit">ENVIAR</button>
+                    </div>
                 </form>
             </div>
-            <button>ENVIAR</button>
+            
         </section>       
         <footer>
             <p>
@@ -69,7 +73,7 @@
                 Todos los fondos recaudados a través de este proyecto son destinados a la promoción y ejecución de actividades por parte de la Comunidad de Desarrolladores de Argentina.
             </p>
                 
-            <div>
+            <div class="container">
                 <div>
                     una iniciativa de
                 </div>
