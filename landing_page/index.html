@@ -45,7 +45,19 @@
         <section>
             <h1>comunicate <span>con nosotros</span></h1>
             <div>
-                <form action=""></form>
+                <form action="">
+                    <label for="nombreYapellido"></label>
+                    <input required name="nombreYapellido" type="text" placeholder="NOMBRE Y APELLIDO" minlength="5" maxlength="100">
+                    <br>
+                    <label for="email"></label>
+                    <input required name="email" type="email" placeholder="E-MAIL">
+                    <br>
+                    <label for="consulta"></label>
+                    <textarea required name="consulta" type="email" placeholder="TU CONSULTA" minlength="5"></textarea>
+                    <div class="submit-container">
+                    <button type="submit" name="submit">ENVIAR</button>
+                </div>
+                </form>
             </div>
             <button>ENVIAR</button>
         </section>       
